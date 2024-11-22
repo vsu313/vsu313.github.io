@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vanessa Su</title>
+  <style>
+    /* Basic styling for the navigation bar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 28px;
+    }
+    nav {
+      background-color: #444;
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Center align the items horizontally */
+    }
+    nav a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    /* Hide content sections by default */
+    .tab-content {
+      display: none;
+      padding: 20px;
+    }
+    /* Show the selected content section */
+    .active {
+      display: block;
+    }
+  
+    /* Style the image on the Home tab */
+    .home-image {
+      float: left;
+      width: 200px;
+      margin-right: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    /* Clear floating elements after the image */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Format second level header */
+    h2 {
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 20px; /* Increase spacing below the h2 elements */
+    }
+    
+    /* Format third level header */
+    h3 {
+      font-size: 30px;
+      text-decoration: underline;
+      margin-bottom: 15px; /* Increase spacing below the h3 elements */
+    }
+    
+    /* Create custom list style for indented lists */
+    .custom-list {
+      list-style-type: none;
+      padding-left: 20px; /* Adjust the value to change the indentation */
+    }    
+      
+    .custom-list li:before {
+      content: "\2022"; /* Unicode bullet point (•) */
+      margin-right: 15px; /* Add spacing between the bullet point and the list item */
+      margin-bottom: 15px; /* Increase spacing below each list item */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vanessa Su</h1>
+  </header>
+  <nav>
+    <a href="#home" class="tab-link" onclick="showTab(event, 'home')">Home</a>
+    <a href="#cv" class="tab-link" onclick="showTab(event, 'cv')">CV</a>
+    <! -- href="#news" class="tab-link" onclick="showTab(event, 'news')">News -->
+    <a href="#contact" class="tab-link" onclick="showTab(event, 'contact')">Contact</a>
+  </nav>
+  <!-- Content sections -->
+  <div id="home" class="tab-content">
+    <h2>Welcome!</h2>
+    <div class="clearfix">
+**      <img src="https://raw.githubusercontent.com/vhaghani26/vhaghani26.github.io/main/Linked_Items/lasallelabportrait_vh.jpg" alt="Viki_Haghani" class="home-image">
+      <p>Hello! I'm Vanessa (she/her), a third-year Biotechnology student at UC Davis. Currently, I’m working as a student researcher in the labs of Dr. Janine LaSalle and Dr. Ian Korf. My research spans both wet-lab work, where I explore epigenetic factors related to neurodevelopmental disorders, and dry-lab work, where I apply bioinformatics tools to analyze large sequencing datasets to answer biological questions. I’m passionate about both areas and especially enjoy the intersection between them. Outside of my studies, I love hiking, camping, trying new recipes, watching shows, and going on mini adventures with friends.</p>
+    </div>
+  </div>
+  <div id="cv" class="tab-content">
+    <h2>Curriculum Vitae</h2>
+      <h3>Education</h3>
+        <p><strong>Bachelor of Science in Biotechnology</strong> <em>(In Progress, 2025)</em>: University of California, Davis; Davis, California; GPA: 4.0</p>
+        <p><strong>Summer Courses at Mission College</strong> (July 2020, July 2021): Mission College; Santa Clara, California; GPA: 4.0</p>
+        <p><strong>High School Diploma</strong> (June 2022): Lynbrook High School; San Jose, California; GPA: 4.0</p>
+      <h3>Research Interests</h3>
+		<p>Epigenetics, bioinformatics, cell therapies, molecular diagnostics and cancer biology.</p>
+      <h3>Fellowships and Scholarships</h3>
+        <p></a>Regents Scholarship (<a href="https://financialaid.ucdavis.edu/scholarships/campus/awards/regents">2022 - 2025</a>)</p>
+      <h3>Publications</h3>
+		<p><strong>2025</strong></p>
+		  <! -- Kuodza G.E., Mouat J.S., Krigbaum N.Y., <strong><u>Haghani V.</u></strong>, Thrall E., Kawai R., Hakam S., Rodriguez Y.J.L., Sullivan T.N., Mendiola A.J.P., Yasui D.H., Tran T.A., Sharifi O., Torres C., Bennett D., Schmidt R.J., La Merrill M.A., Cirilo P.M., Hertz-Picciotto I., Cohn B.A., LaSalle J.M. Newborn blood DNA methylation correlates risk of autism spectrum disorders with grandparental age, alcohol intake, and cigarette smoking. Poster will be persented by Kuodza G.E. at the International Society for Autism Research (INSAR) Conference 2025. -->
+      <h3>Conference Abstracts, Posters, and Presentations</h3>
+		<p><strong>2024</strong></p>
+          <p>Wilson J., <strong><u>Su V.</u></strong> The Elucidation of NHIP’s Contributions to Autism Spectrum Disorder by Promoter Analysis. Poster presented by J. Wilson at the 2024 Annual Biomedical Research Conference for Minoritized Scientists (ABRCMS).</p>
+		  <p><strong><u>Su V.</u></strong>, Samanta S., Boquiren M. Advancing Western Blotting Techniques – Exploring pH, Salt Composition, and Transfer Stack Sizes. Abstract submitted and 15-minute presentation given by V. Su at the Undergraduate Research Conference 2024.</p>
+       <h3>Research Experience</h3>
+        <p></a><strong>Undergraduate Student Researcher</strong> | <a href="https://mmi-lab.ucdavis.edu/">LaSalle Lab</a> | Department of Medical Microbiology and Immunology | UC Davis School of Medicine | Davis, CA | April 2024 - Present</p>
+          <ul class="custom-list">
+              <li>Utilize RNA immunoprecipitation and Nanopore sequencing to characterize MeCP2-RNA interactions and its contribution to Rett Syndrome</li>
+              <li>Examine experimental investigations on the methylation levels of the NHIP gene promoter to assess its expression levels</li>
+          </ul>
+        <p></a><strong>Undergraduate Student Researcher</strong> | <a href="https://korflab.github.io/">Korf Lab</a> |  Department of Molecular and Cellular Biology  | UC Davis | Davis, CA | June 2023 - Present</p>
+          <ul class="custom-list">
+              <li>Analyze 250+ publicly available MeCP2 ChIP-seq, CUT&RUN, and CUT&Tag samples across over 25 studies using Rocketchip</li>
+          </ul>
+        <p></a><strong>Summer Intern</strong> | <a href="https://lingshanyu.squarespace.com/">Diagtech Lab</a> |  Institute of BioPharmaceutical Sciences | National Sun Yat-sen University | Kaohsiung, Taiwan | June 2024 - September 2024</p>
+          <ul class="custom-list">
+              <li>Conducted assays of RPA and CRISPR for bacterial antibiotic detection in point-of-care applications</li>
+              <li>Trained an AI model to automate DNA fluorescence signal detection</li>
+          </ul>
+        <p></a><strong>Volunteer Student Research Assistant</strong> | <a href="https://www.gomeslab.net/">Gomes Lab</a> | Department of Neurobiology, Physiology and Behavior | UC Davis | Davis, CA | April 2023 - June 2024</p>
+          <ul class="custom-list">
+              <li>Performed Western blots to explore methods for enhancing the technique, focusing on the impact of transfer paper stack size on protein transfer efficiency and results</li>
+              <li>Compiled a book chapter that integrates findings from existing publications to examine the various aspects and applications of ibuprofen on the brains</li>
+          </ul>
+      <h3>Teaching Experience</h3>
+        <p><strong>Student Lab Manager for the BioInnovation Group - Research Training program</strong> UC Davis | Davis, CA | March 2023 - Present</p>
+          <ul class="custom-list">
+              <li>Facilitate weekly training sessions for a program serving 700+ undergraduate students annually, guiding their progress through essential laboratory skill modules such as micropipetting, gel electrophoresis, and PCR</li>
+              <li>Manage program operations, including in-person instruction, student enrollment, online course material development, and certification</li>
+          </ul>
+      <h3>Mentoring Experience</h3>
+        <p><strong>Letters to a Pre-Scientist (LPS)</strong> | LPS | North Carolina | July 2024 - Present</p>
+          <ul class="custom-list">
+              <li>Send four snail-mail letters to students from low-income communities over the course of the academic school year to inform them of STEM careers, how to navigate higher education, how to overcome obstacles, and to inspire them to pursue a career in STEM</li>
+          </ul>
+        <p><strong>Sheldon High School Biotech Academy eMentor Program</strong> | Sheldon High School | Sacramento, CA | October 2024 - Present</p>
+          <ul class="custom-list">
+              <li>Mentor students every academic year by discussing college choices, working on resume writing, learning about social networking, discussing how to overcome failures and challenges, and learning about soft workplace skills</li>
+          </ul>
+      <h3>Other Experiences and Affiliations</h3>
+        <p><strong>Events Chair and Mentorship Lead for the BioInnovation Group</strong> | UC Davis | Davis, CA | June 2024 - Present</p>
+          <ul class="custom-list">
+              <li>Develop a resource hub providing materials on CV/resume writing, cold emailing, and cover letter preparation</li>
+              <li>Organize lab tours to familiarize undergraduate students with on-campus research opportunities</li>
+              <li>Launch a mentorship program pairing upperclassmen with underclassmen to foster peer support and guidance</li>
+          </ul>
+      <h3>Qualifications/Skills</h3>
+        <p><strong>Laboratory:<strong> Pipetting, PCR, Gel Electrophoresis, DNA Purification, RPA, LAMP, Western Blotting, Proteasome Assay, Cell Culturing, Bacteria Culturing, CRISPR, Mouse Handling, and Tissue Collection</p>
+        <p><strong>Computer:<strong> Proficient in Python/UNIX, HTML, Google Suite (Docs, Slides, Sheets, etc.), and Microsoft Suite programs</p>
+        <p><strong>Certifications:<strong> Laboratory Safety Certificate, Heartsaver CPR & AED Certification</p>
+        <p><strong>Languages:<strong> Bilingual in English and Chinese; basic knowledge of Spanish</p>
+      <h3>Honors and Awards</h3>
+        <p></a>UC Davis College of Agricultural and Environmental Sciences Dean's Honors List (<a href="https://caes.ucdavis.edu/students/resources/honors/list">2022 - 2024</a>)</p>
+        <p>Valedictorian of Lynbrook High School (2022)</p>
+        <p></a>President’s Volunteer Service Award: Gold medalist (<a href="https://presidentialserviceawards.gov/about">2019</a>)</p>
+        <p>Received 8 scholar-athlete awards for field hockey, soccer, and track and field in high school (2018-2022)</p>
+      <h3>Links</h3>
+        <u1>
+          <li><p><a href="https://github.com/vsu313">GitHub</a></p></li>
+          <li><p><a href="https://linkedin.com/in/vanessa-su-7b986b1b2/">LinkedIn</a></p></li>
+        </u1>
+        <p>Please note that not all platforms may be up to date.</p>
+  </div>
+  <div id="contact" class="tab-content">
+    <h2>Contact Me</h2>
+      <p>Please feel free to contact me if you have any questions, comments, or concerns. My expected graduation date is Fall 2025, and I plan to work for about 1.5 years before applying to PhD programs in 2027. Any recommendations are welcome.</p>
+        <form action="mailto:vanessasu313@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+            <input type="submit" value="Submit">
+        </form>    
+  </div>
+  <script>
+  	// Function to show the selected tab and its content
+  	function showTab(evt, tabName) {
+  		var i, tabContent, tabLinks;
+  		tabContent = document.getElementsByClassName('tab-content');
+  		for (i = 0; i < tabContent.length; i++) {
+  			tabContent[i].style.display = 'none';
+  		}
+  		tabLinks = document.getElementsByClassName('tab-link');
+  		for (i = 0; i < tabLinks.length; i++) {
+  			tabLinks[i].classList.remove('active');
+  		}
+  		document.getElementById(tabName).style.display = 'block';
+  		evt.currentTarget.classList.add('active');
+  	}
+  
+  	// Automatically show the correct tab based on the URL hash fragment
+  	document.addEventListener("DOMContentLoaded", function () {
+  		var currentHash = window.location.hash;
+  		if (currentHash) {
+  			showTab({ currentTarget: document.querySelector('.tab-link[href="' + currentHash + '"]') }, currentHash.substr(1));
+  		} else {
+  			// Default to showing the "Home" tab
+  			document.getElementById("home").style.display = "block";
+  		}
+  	});
+  </script>
+</body>
+</html>
